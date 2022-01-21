@@ -1,6 +1,6 @@
 # todo_app_demo
 
-A new Flutter project.
+This is a simple cross-platform application that showcases several key features of front-end development in Flutter, including basic UI setup, dynamic and stateful UI elements, as well as reusable custom widgets.
 
 ## Getting Started
 
