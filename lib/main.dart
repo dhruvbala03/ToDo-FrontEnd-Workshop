@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:todo_app_demo/taskview.dart';
+import 'package:todo_app_demo/reusable/my_text_input.dart';
+import 'package:todo_app_demo/reusable/plus_button.dart';
+import 'package:todo_app_demo/reusable/taskview.dart';
 
-import 'task.dart';
+import 'models/task.dart';
 
 void main() {
   runApp(const TodoApp());
@@ -55,25 +57,10 @@ class _TodoAppState extends State<TodoApp> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Expanded(
-                    child: TextField(
-                      keyboardType: TextInputType.text,
-                      controller: _nameController,
-                      decoration: const InputDecoration(
-                        border: OutlineInputBorder(),
-                        labelText: "Task Name...",
-                      ),
-                    ),
-                  ),
+                      child: MyTextInput(
+                          text: "Task Name...", controller: _nameController)),
                   const SizedBox(width: 15),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                    child: IconButton(
-                      onPressed: addTask,
-                      icon: const Icon(Icons.add),
-                    ),
-                  )
+                  PlusButton(onPress: addTask),
                 ],
               ),
               const SizedBox(height: 50),
