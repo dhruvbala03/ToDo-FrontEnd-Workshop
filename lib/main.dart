@@ -57,8 +57,11 @@ class _TodoAppState extends State<TodoApp> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Expanded(
-                      child: MyTextInput(
-                          text: "Task Name...", controller: _nameController)),
+                    child: MyTextInput(
+                      text: "Task Name...",
+                      controller: _nameController,
+                    ),
+                  ),
                   const SizedBox(width: 15),
                   PlusButton(onPress: addTask),
                 ],
@@ -74,8 +77,8 @@ class _TodoAppState extends State<TodoApp> {
                         itemCount: _taskList.length,
                         itemBuilder: (BuildContext context, int index) {
                           return TaskView(
+                            task: _taskList[index],
                             deleteFunction: () => deleteTask(_taskList[index]),
-                            taskName: _taskList[index].name,
                           );
                         },
                       ),

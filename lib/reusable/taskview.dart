@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app_demo/models/task.dart';
 
 class TaskView extends StatelessWidget {
   final deleteFunction;
-  final String taskName;
+  final Task task;
 
-  const TaskView({Key? key, required this.deleteFunction, required this.taskName}) : super(key: key);
+  const TaskView({Key? key, required this.deleteFunction, required this.task})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class TaskView extends StatelessWidget {
         padding: const EdgeInsets.all(5),
         child: Row(
           children: [
-            Text(taskName),
+            Text(task.name),
             Expanded(child: Container()),
             IconButton(
               onPressed: deleteFunction,
