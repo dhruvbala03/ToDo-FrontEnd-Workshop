@@ -2,15 +2,8 @@
 
 This is a simple cross-platform application that showcases several key features of front-end development in Flutter, including basic UI setup, dynamic and stateful UI elements, as well as reusable custom widgets.
 
-## Getting Started
+Feel free to use the following content slides to familiarize yourself with the basics of Flutter.
 
-This project is a starting point for a Flutter application.
+CONTENT SLIDES: https://docs.google.com/presentation/d/1XF8sm2NxSpO81IlxPcSUKbFV1RQjU7XvdJRXoTb7hsg/edit?usp=sharing 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Using the source code in this repository as a reference, see if you can design the to-do app yourself!
