@@ -1,4 +1,4 @@
-# todo_app_demo
+# Front-End Workshop: To-Do App using Google Flutter
 
 This is a simple cross-platform application that showcases several key features of front-end development in Flutter, including basic UI setup, dynamic and stateful UI elements, as well as reusable custom widgets.
 
